@@ -16,7 +16,7 @@ on:
 jobs:
   compile:
 
-    runs-on: ubuntu-latest
+    runs-on: self-h
 
     steps:
     - uses: actions/checkout@v4
@@ -31,7 +31,7 @@ jobs:
 
   security-check:
 
-    runs-on: ubuntu-latest
+    runs-on: self-h
     needs: compile
     steps:
     - uses: actions/checkout@v4
